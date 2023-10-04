@@ -11,7 +11,7 @@ locals {
 
 
 resource "azurerm_storage_account" "ubuntu" {
-    name                              = "pmack${replace(var.env, "_", "")}"
+    name                              = "cfdemo_pmack${replace(var.env, "_", "")}"
     resource_group_name               = var.rg_name
     location                          = var.rg_location
     account_replication_type          = "LRS"
